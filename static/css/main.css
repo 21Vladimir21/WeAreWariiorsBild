@@ -1,0 +1,92 @@
+﻿.unity-container.desktop {
+    height: 100%;
+    aspect-ratio: 9 / 16;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.unity-container.handheld {
+    height: 100%;
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#unity-canvas{
+    height: 100%;
+    width: 100%;
+}
+
+#loading-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/background.png') center / contain no-repeat, #d3d3d3;
+}
+
+#unity-loading-bar {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#unity-progress-bar-empty {
+    text-align: left;
+    width: 75%;
+    height: 3%;
+    outline: 7px solid #41807f;
+    outline-offset: -1px;
+}
+
+#unity-progress-bar-full {
+    width: 0%;
+    height: 100%;
+    background-color: #41807f;
+}
+
+#loading-text {
+    color: #666;
+    letter-spacing: 1px;
+    width: 100%;
+    font-family: "AllTroika", sans-serif;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: -50px;
+}
+
+@font-face {
+    font-family: 'AllTroika';
+    src: url('../ALL_troika.otf');
+}
